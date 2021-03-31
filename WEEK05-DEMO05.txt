@@ -1,0 +1,31 @@
+pwd
+/home/Theophilus-Lukas/tarfiles/WEEK05/DEMO05
+date
+Wed 31 Mar 2021 11:31:15 AM WIB
+12-memory
+=======================
+ls -al
+total 1476
+drwxr-xr-x 2 Theophilus-Lukas Theophilus-Lukas   4096 Mar 31 11:31 .
+drwxr-xr-x 3 Theophilus-Lukas Theophilus-Lukas   4096 Mar 30 18:34 ..
+-rw-r--r-- 1 Theophilus-Lukas Theophilus-Lukas  30866 Mar 30 18:34 01-top.jpg
+-rw-r--r-- 1 Theophilus-Lukas Theophilus-Lukas 150852 Mar 30 18:34 02-top.jpg
+-rw-r--r-- 1 Theophilus-Lukas Theophilus-Lukas 127192 Mar 30 18:34 03-top.jpg
+-rw-r--r-- 1 Theophilus-Lukas Theophilus-Lukas 165575 Mar 30 18:34 04-top.jpg
+-rw-r--r-- 1 Theophilus-Lukas Theophilus-Lukas 147700 Mar 30 18:34 05-top.jpg
+-rw-r--r-- 1 Theophilus-Lukas Theophilus-Lukas 152564 Mar 30 18:34 06-top.jpg
+-rw-r--r-- 1 Theophilus-Lukas Theophilus-Lukas 148556 Mar 30 18:34 07-top.jpg
+-rw-r--r-- 1 Theophilus-Lukas Theophilus-Lukas 150142 Mar 30 18:34 08-top.jpg
+-rw-r--r-- 1 Theophilus-Lukas Theophilus-Lukas 149904 Mar 30 18:34 09-top.jpg
+-rw-r--r-- 1 Theophilus-Lukas Theophilus-Lukas 147508 Mar 30 18:34 10-top.jpg
+-rw-r--r-- 1 Theophilus-Lukas Theophilus-Lukas  87596 Mar 30 18:34 11-top.jpg
+-rw-r--r-- 1 Theophilus-Lukas Theophilus-Lukas   2804 Mar 30 18:34 12-memory.c
+-rw-r--r-- 1 Theophilus-Lukas Theophilus-Lukas      0 Mar 31 11:31 12-memory.map
+-rw-r--r-- 1 Theophilus-Lukas Theophilus-Lukas   1778 Mar 30 18:34 13-chktoken.c
+-rw-r--r-- 1 Theophilus-Lukas Theophilus-Lukas    428 Mar 30 18:34 Makefile
+-rw-r--r-- 1 Theophilus-Lukas Theophilus-Lukas    128 Mar 31 11:31 WEEK05-DEMO05.txt
+pwd
+/home/Theophilus-Lukas/tarfiles/WEEK05/DEMO05
+date
+Wed 31 Mar 2021 11:31:15 AM WIB
+mv WEEK05-DEMO05.txt ../../
