@@ -1,0 +1,5 @@
+ZCZC A01 open WEEK07-REPORT1.txt (SUCCESS)
+ZCZC A02 hostname osp
+ZCZC A03 createStamp OS211W07 Theophilus-Lukas 210501-163000 64FDB7
+ZCZC A04 verifyStamp OS211W07 Theophilus-Lukas 210501-163000 64FDB7 Verified
+ZCZC SM2 shared memory is OK (SUCCESS)

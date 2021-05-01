@@ -1,0 +1,48 @@
+pwd
+/home/Theophilus-Lukas/tarfiles/WEEK06/FORK
+date
+Thu 22 Apr 2021 09:35:11 PM WIB
+gcc -std=gnu18  mylib.c mytest.c -o mytest 
+gcc -std=gnu18  mylib.c chktoken.c -o chktoken 
+gcc -std=gnu18  mylib.c verifyToken.c -o verifyToken 
+gcc -std=gnu18  mylib.c myfork.c -o myfork 
+./myfork 
+PID[1249][Theophilus-Lukas 3515-D37B]-[3]
+PID[1243][Theophilus-Lukas 3514-7861]-[2]
+PID[1237][Theophilus-Lukas 3513-C59B]-[1]
+PID[1231][Theophilus-Lukas 3512-4939]-[0]
+cat WEEK06-MEMORY-SHARE.bin | wc -c > WEEK06-MEMORY-SHARE.txt
+cat WEEK06-MEMORY-SHARE.bin | tr -dc '[:alnum:]\n -_' >> WEEK06-MEMORY-SHARE.txt
+bash mytest.sh
+ZCZC Thu 22 Apr 2021 09:35:16 PM WIB
+ZCZC Theophilus-Lukas 3516-F579: Verified
+ZCZC BINSIZE 1028
+ZCZC TXTSIZE 116
+ZCZC Theophilus-Lukas 3512-4939: Verified
+ZCZC Theophilus-Lukas 3513-C59B: Verified
+ZCZC Theophilus-Lukas 3514-7861: Verified
+ZCZC Theophilus-Lukas 3515-D37B: Verified
+ls -al
+total 132
+drwxr-xr-x 2 Theophilus-Lukas Theophilus-Lukas  4096 Apr 22 21:35 .
+drwxr-xr-x 3 Theophilus-Lukas Theophilus-Lukas  4096 Apr  5 18:36 ..
+-rwxr-xr-x 1 Theophilus-Lukas Theophilus-Lukas 17632 Apr 22 21:35 chktoken
+-rw-r--r-- 1 Theophilus-Lukas Theophilus-Lukas   651 Apr  5 18:36 chktoken.c
+-rw-r--r-- 1 Theophilus-Lukas Theophilus-Lukas  1085 Apr  5 18:36 Makefile
+-rwxr-xr-x 1 Theophilus-Lukas Theophilus-Lukas 17808 Apr 22 21:35 myfork
+-rw-r--r-- 1 Theophilus-Lukas Theophilus-Lukas  1423 Apr  5 18:36 myfork.c
+-rw-r--r-- 1 Theophilus-Lukas Theophilus-Lukas  2402 Apr  5 18:36 mylib.c
+-rw-r--r-- 1 Theophilus-Lukas Theophilus-Lukas  1913 Apr  5 18:36 mylib.h
+-rwxr-xr-x 1 Theophilus-Lukas Theophilus-Lukas 17712 Apr 22 21:35 mytest
+-rw-r--r-- 1 Theophilus-Lukas Theophilus-Lukas  1033 Apr  5 18:36 mytest.c
+-rw-r--r-- 1 Theophilus-Lukas Theophilus-Lukas  1000 Apr  5 18:36 mytest.sh
+-rwxr-xr-x 1 Theophilus-Lukas Theophilus-Lukas 17632 Apr 22 21:35 verifyToken
+-rw-r--r-- 1 Theophilus-Lukas Theophilus-Lukas   789 Apr  5 18:36 verifyToken.c
+-rw-r--r-- 1 Theophilus-Lukas Theophilus-Lukas   900 Apr 22 21:35 WEEK06-FORK.txt
+-rw-rw-rw- 1 Theophilus-Lukas Theophilus-Lukas  1028 Apr 22 21:35 WEEK06-MEMORY-SHARE.bin
+-rw-r--r-- 1 Theophilus-Lukas Theophilus-Lukas   116 Apr 22 21:35 WEEK06-MEMORY-SHARE.txt
+pwd
+/home/Theophilus-Lukas/tarfiles/WEEK06/FORK
+date
+Thu 22 Apr 2021 09:35:16 PM WIB
+mv WEEK06-FORK.txt ../../

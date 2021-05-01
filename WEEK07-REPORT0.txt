@@ -1,0 +1,41 @@
+ZCZC R01 pwd /home/Theophilus-Lukas/tarfiles/WEEK07/SYNC
+ZCZC R02 date Sat 01 May 2021 04:29:57 PM WIB
+gcc -std=gnu18  mylib.c mytest.c -o mytest 
+gcc -std=gnu18  mylib.c makeMyShareMemory.c -o makeMyShareMemory 
+=====   mytest...
+./mytest
+Sat 01 May 2021 04:29:57 PM WIB
+mySHA1[INPUT][4E498E]
+getTimeStamp[210501-162957]
+createStamp[Theophilus-Lukas 210501-162957 8F8A27]
+verifyStamp[INPUT Theophilus-Lukas 210501-162957 8F8A27]: Verified
+ZCZC SM2 shared memory is OK (SUCCESS)
+START: LOOP...
+Sat 01 May 2021 04:29:59 PM WIB
+Sat 01 May 2021 04:30:00 PM WIB
+END: LOOP...
+DELTA 210413-235959 210414-000001 [2]
+str2sec 450817-100000 1504800
+str2sec 210817-100000 1504800
+TESTTEST
+=====   makeMyShareMemory...
+./makeMyShareMemory
+ZCZC R03 ls -al
+total 80
+drwxr-xr-x 2 Theophilus-Lukas Theophilus-Lukas  4096 May  1 16:30 .
+drwxr-xr-x 3 Theophilus-Lukas Theophilus-Lukas  4096 Apr 17 23:30 ..
+-rw-r--r-- 1 Theophilus-Lukas Theophilus-Lukas  1103 Apr 17 23:30 Makefile
+-rwxr-xr-x 1 Theophilus-Lukas Theophilus-Lukas 18168 May  1 16:29 makeMyShareMemory
+-rw-r--r-- 1 Theophilus-Lukas Theophilus-Lukas  1172 Apr 17 23:30 makeMyShareMemory.c
+-rw-r--r-- 1 Theophilus-Lukas Theophilus-Lukas  3832 Apr 17 23:30 mylib.c
+-rw-r--r-- 1 Theophilus-Lukas Theophilus-Lukas  2441 Apr 17 23:30 mylib.h
+-rwxr-xr-x 1 Theophilus-Lukas Theophilus-Lukas 18152 May  1 16:29 mytest
+-rw-r--r-- 1 Theophilus-Lukas Theophilus-Lukas  1461 Apr 17 23:30 mytest.c
+-rw-rw-rw- 1 Theophilus-Lukas Theophilus-Lukas    40 May  1 16:30 WEEK07-MYSYNC.bin
+-rw-r--r-- 1 Theophilus-Lukas Theophilus-Lukas   743 May  1 16:30 WEEK07-REPORT0.txt
+-rw-r--r-- 1 Theophilus-Lukas Theophilus-Lukas   249 May  1 16:30 WEEK07-REPORT1.txt
+ZCZC R04 pwd /home/Theophilus-Lukas/tarfiles/WEEK07/SYNC
+ZCZC R05 date Sat 01 May 2021 04:30:00 PM WIB
+mv WEEK07-REPORT1.txt ../../
+mv WEEK07-MYSYNC.bin ../../
+mv WEEK07-REPORT0.txt ../../

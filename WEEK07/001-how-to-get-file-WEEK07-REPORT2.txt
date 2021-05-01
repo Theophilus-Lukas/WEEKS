@@ -1,0 +1,193 @@
+exit
+
+
+How to get file WEEK07-REPORT2.txt
+
+
+1. SSH into os211.vlsm.org with any account 
+
+   * E.g. ssh dummy@os211.vlsm.org
+   * Create a folder with your account name (e.g. cbkadal).
+   * exit
+
+####################
+cbkadal@osp:~/RESULT/W07$ ssh dummy@os211.vlsm.org
+Welcome to Ubuntu 20.04.2 LTS (GNU/Linux 4.4.0 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+Last login: Sat Apr 17 22:48:15 2021 from 158.140.187.224
+
+$ mkdir cbkadal
+
+$ ls -al cbkadal
+total 8
+drwxrwxr-x 2 dummy dummy 4096 Apr 17 22:57 .
+drwx------ 6 dummy dummy 4096 Apr 17 22:57 ..
+
+$ exit
+logout
+Connection to os211.vlsm.org closed.
+
+cbkadal@osp:~/RESULT/W07$ 
+####################
+
+
+2. Copy WEEK07-MYSYNC.bin to os211.vlsm.org
+
+####################
+cbkadal@osp:~/RESULT/W07$ ls -al
+total 24
+drwxr-xr-x 2 cbkadal cbkadal 4096 Apr 17 23:04 .
+drwxr-xr-x 7 cbkadal cbkadal 4096 Apr 17 09:14 ..
+-rw-rw-rw- 1 cbkadal cbkadal   31 Apr 17 22:59 WEEK07-MYSYNC.bin
+-rw-r--r-- 1 cbkadal cbkadal 1612 Apr 17 22:59 WEEK07-REPORT0.txt
+-rw-r--r-- 1 cbkadal cbkadal  231 Apr 17 22:59 WEEK07-REPORT1.txt
+
+cbkadal@osp:~/RESULT/W07$ scp WEEK07-MYSYNC.bin dummy@os211.vlsm.org:~/cbkadal/
+WEEK07-MYSYNC.bin                                 100%   31     6.1KB/s   00:00    
+####################
+
+
+3. SSH into os211.vlsm.org again
+
+   * E.g. ssh dummy@os211.vlsm.org
+   * run "fillShareMemory"
+   * exit
+
+####################
+cbkadal@osp:~/RESULT/W07$ ssh dummy@os211.vlsm.org
+Welcome to Ubuntu 20.04.2 LTS (GNU/Linux 4.4.0 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+Last login: Sat Apr 17 22:57:25 2021 from 158.140.187.224
+
+$ cd cbkadal/
+
+$ ls -al
+total 12
+drwxrwxr-x 2 dummy dummy 4096 Apr 17 23:00 .
+drwx------ 6 dummy dummy 4096 Apr 17 22:57 ..
+-rw-rw-r-- 1 dummy dummy   31 Apr 17 23:00 WEEK07-MYSYNC.bin
+
+$ fillShareMemory 
+
+$ ls -al
+total 16
+drwxrwxr-x 2 dummy dummy 4096 Apr 17 23:00 .
+drwx------ 6 dummy dummy 4096 Apr 17 22:57 ..
+-rw-rw-rw- 1 dummy dummy  256 Apr 17 23:00 WEEK07-MYSYNC.bin
+-rw-rw-r-- 1 dummy dummy  527 Apr 17 23:00 WEEK07-REPORT2.txt
+
+$ exit
+logout
+Connection to os211.vlsm.org closed.
+
+cbkadal@osp:~/RESULT/W07$
+####################
+
+
+4. Copy WEEK07-REPORT2.txt from os211.vlsm.org
+
+####################
+cbkadal@osp:~/RESULT/W07$ ls -al
+total 24
+drwxr-xr-x 2 cbkadal cbkadal 4096 Apr 17 23:04 .
+drwxr-xr-x 7 cbkadal cbkadal 4096 Apr 17 09:14 ..
+-rw-rw-rw- 1 cbkadal cbkadal   31 Apr 17 22:59 WEEK07-MYSYNC.bin
+-rw-r--r-- 1 cbkadal cbkadal 1612 Apr 17 22:59 WEEK07-REPORT0.txt
+-rw-r--r-- 1 cbkadal cbkadal  231 Apr 17 22:59 WEEK07-REPORT1.txt
+
+cbkadal@osp:~/RESULT/W07$ scp dummy@os211.vlsm.org:~/cbkadal/WEEK07-REPORT2.txt .
+WEEK07-REPORT2.txt                                  100%  527    98.0KB/s   00:00    
+
+cbkadal@osp:~/RESULT/W07$ ls -al
+total 24
+drwxr-xr-x 2 cbkadal cbkadal 4096 Apr 17 23:04 .
+drwxr-xr-x 7 cbkadal cbkadal 4096 Apr 17 09:14 ..
+-rw-rw-rw- 1 cbkadal cbkadal   31 Apr 17 22:59 WEEK07-MYSYNC.bin
+-rw-r--r-- 1 cbkadal cbkadal 1612 Apr 17 22:59 WEEK07-REPORT0.txt
+-rw-r--r-- 1 cbkadal cbkadal  231 Apr 17 22:59 WEEK07-REPORT1.txt
+-rw-r--r-- 1 cbkadal cbkadal  527 Apr 17 23:02 WEEK07-REPORT2.txt
+cbkadal@osp:~/RESULT/W07$
+####################
+
+
+5. Eg. FILES: REPORT0, REPORT1, REPORT2
+
+# FILE: WEEK07-REPORT0.txt ################################
+
+ZCZC R01 pwd /home/cbkadal/mydemo/work/WEEK07/SYNC
+ZCZC R02 date Sat 17 Apr 22:59:39 WIB 2021
+gcc -std=gnu18  mylib.c mytest.c -o mytest 
+gcc -std=gnu18  mylib.c makeMyShareMemory.c -o makeMyShareMemory 
+=====   mytest...
+./mytest
+Sat 17 Apr 22:59:39 WIB 2021
+mySHA1[INPUT][4E498E]
+getTimeStamp[210417-225939]
+createStamp[cbkadal 210417-225939 FCCFB4]
+verifyStamp[INPUT cbkadal 210417-225939 FCCFB4]: Verified
+ZCZC SM2 shared memory is OK (SUCCESS)
+START: LOOP...
+Sat 17 Apr 22:59:40 WIB 2021
+Sat 17 Apr 22:59:42 WIB 2021
+END: LOOP...
+DELTA 210413-235959 210414-000001 [2]
+str2sec 450817-100000 1504800
+str2sec 210817-100000 1504800
+TESTTEST
+=====   makeMyShareMemory...
+./makeMyShareMemory
+ZCZC R03 ls -al
+total 80
+drwxr-xr-x 2 cbkadal cbkadal  4096 Apr 17 22:59 .
+drwxr-xr-x 3 cbkadal cbkadal  4096 Apr 17 22:45 ..
+-rw-r--r-- 1 cbkadal cbkadal  1103 Apr 16 17:32 Makefile
+-rwxr-xr-x 1 cbkadal cbkadal 18168 Apr 17 22:59 makeMyShareMemory
+-rw-r--r-- 1 cbkadal cbkadal  1172 Apr 16 16:13 makeMyShareMemory.c
+-rw-r--r-- 1 cbkadal cbkadal  3832 Apr 17 22:13 mylib.c
+-rw-r--r-- 1 cbkadal cbkadal  2441 Apr 17 08:24 mylib.h
+-rwxr-xr-x 1 cbkadal cbkadal 18152 Apr 17 22:59 mytest
+-rw-r--r-- 1 cbkadal cbkadal  1461 Apr 17 08:23 mytest.c
+-rw-rw-rw- 1 cbkadal cbkadal    31 Apr 17 22:59 WEEK07-MYSYNC.bin
+-rw-r--r-- 1 cbkadal cbkadal   707 Apr 17 22:59 WEEK07-REPORT0.txt
+-rw-r--r-- 1 cbkadal cbkadal   231 Apr 17 22:59 WEEK07-REPORT1.txt
+ZCZC R04 pwd /home/cbkadal/mydemo/work/WEEK07/SYNC
+ZCZC R05 date Sat 17 Apr 22:59:42 WIB 2021
+mv WEEK07-REPORT1.txt ../../
+mv WEEK07-MYSYNC.bin ../../
+mv WEEK07-REPORT0.txt ../../
+
+
+# FILE: WEEK07-REPORT1.txt ################################
+
+ZCZC A01 open WEEK07-REPORT1.txt (SUCCESS)
+ZCZC A02 hostname osp
+ZCZC A03 createStamp OS211W07 cbkadal 210417-225942 179344
+ZCZC A04 verifyStamp OS211W07 cbkadal 210417-225942 179344 Verified
+ZCZC SM2 shared memory is OK (SUCCESS)
+
+
+# FILE: WEEK07-REPORT2.txt ################################
+
+ZCZC B01 open WEEK07-REPORT2.txt (SUCCESS)
+ZCZC B02 hostname ckilat1.vlsm.org
+ZCZC B03 getTimeStamp() 210417-230045
+ZCZC SM2 shared memory is OK (SUCCESS)
+ZCZC SM2 shared memory is OK (SUCCESS)
+ZCZC B06 Locking shared memory with 210417-230045 (WAITING)
+ZCZC B09 New    Stamp: cbkadal 210417-225942 179344 
+ZCZC B10 Verify Stamp: Verified
+ZCZC B11 Shared Memory Listing
+===============================
+cbkadal 210417-225942 179344 
+===============================
+ZCZC B12 Adding: cbkadal 210417-225942 179344 
+ZCZC B14 BYEBYE
+
+# #########################################################
+
